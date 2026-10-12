@@ -1,0 +1,15 @@
+# Terraform state (may contain secrets like the DB password) — never commit.
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+crash.log
+
+# Variable files that hold secrets.
+*.tfvars
+*.tfvars.json
+!example.tfvars
+
+# Editor / OS noise
+.DS_Store
+*.swp
